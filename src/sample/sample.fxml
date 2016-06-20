@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <HBox prefHeight="50.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#buttonOneClicked" text="Path1" />
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#buttonTwoClicked" text="Path 2" />
+            <Button layoutX="72.0" layoutY="10.0" mnemonicParsing="false" onAction="#buttonRunClicked" text="Compare" />
+            <Text nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="Select path 1" textAlignment="RIGHT" textOrigin="CENTER">
+               <HBox.margin>
+                  <Insets left="270.0" top="-10.0" />
+               </HBox.margin>
+            </Text>
+            <Text layoutX="231.0" layoutY="34.0" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="Select path 2" textAlignment="RIGHT">
+               <HBox.margin>
+                  <Insets left="-97.0" top="5.0" />
+               </HBox.margin>
+            </Text>
+            <Text layoutX="378.0" layoutY="34.0" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="Compare" textAlignment="RIGHT">
+               <HBox.margin>
+                  <Insets left="-97.0" top="20.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="12.0" />
+         </padding>
+      </HBox>
+      <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="350.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <content>
+            <TextArea fx:id="textArea" />
+         </content>
+      </ScrollPane>
+   </children>
+</VBox>
